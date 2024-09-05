@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap'); /* Import the desired font */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c2c673;
+    color: #fff;
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Arrange body content vertically */
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #3d4a1c; /* Dark background for the header */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header nav ul .center-links {
+    display: flex;
+    justify-content: center;
+    flex: 1; /* Center remaining links */
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+header nav ul li a.home-link {
+    background-color: #fff;
+    color: #3d4a1c;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    z-index: 1;
+    padding: 20px;
+    width: 100%; 
+    max-width: 1200px;
+}
+
+.transparent-rectangle {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 40px 20px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: -20px auto 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    min-height: 400px; 
+}
+
+
+.intro-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.intro-text h1 {
+    font-size: 23px; /* "Hi! I am" font size */
+    margin-bottom: 20px;
+    display: flex; /* This will align "Hi! I am" and "Wissal El Amoury" on the same line */
+    align-items: center;
+    margin-left: 40px;
+}
+
+.intro-text .name {
+    font-family: 'Jacques Francois Shadow', serif; /* Apply Jacques Francois Shadow font */
+    font-size: 50px; /* "Wissal El Amoury" font size */
+    font-weight: bold;
+    margin-left: 20px; /* Adds space between "Hi! I am" and "Wissal El Amoury" */
+    display: inline-block; 
+    color: #FF8C00;
+}
+
+.intro-text p {
+    font-size: 20px; /* Rest of the content font size */
+    margin: 20px 0;
+    line-height: 1.6;
+    margin-left: 30px;
+}
+
+
+.links a {
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.links a:after {
+    content: '→';
+    position: absolute;
+    right: -20px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.links a:hover:after {
+    opacity: 1;
+}
+
+.intro-image .image-wrapper {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-image img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-triangle {
+    position: relative;
+    background-color: #3d4a1c;
+    height: 100px;
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+    margin-top: 20px;
+}
+
+footer .social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .social-media li {
+    margin: 0 10px;
+}
+
+footer .social-media li a img {
+    width: 24px;
+    height: 24px;
+}
