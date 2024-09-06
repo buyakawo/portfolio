@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wissal El Amoury - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                    <li><a href="{{ url_for('home') }}" class="home-link">HOME</a></li>                <div class="center-links">
+                    <li><a href="{{ url_for('exp') }}">Experience</a></li>
+                    <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                    <li><a href="{{ url_for('resume') }}">Resume</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <div class="transparent-rectangle">
+            <div class="intro-text">
+                <h1>
+                      Hi! I am <span class="name">Wissal El Amoury</span>
+                </h1>
+                <p>
+                    "  I'm a Software Engineering student at Sichuan University, passionate about coding and problem-solving. I enjoy turning complex ideas into functional, efficient software solutions. 
+                    As I continue to hone my skills, I'm excited to showcase my projects and collaborate on innovative tech initiatives. Explore my work, and let's connect to create something impactful together!"
+                </p>
+            </div>
+            <div class="intro-image">
+                <div class="image-wrapper">
+                    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Wissal El Amoury">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-triangle">
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.linkedin.com/in/wissal-el-amoury-138944254/" target="_blank">
+                        <img src="{{ url_for('static', filename='icons/Linkedln.png') }}" alt="LinkedIn">
+                    </a>
+                </li>                
+                <li>
+                    <a href="https://github.com/buyakawo" target="_blank">
+                        <img src="{{ url_for('static', filename='icons/github.png') }}" alt="GitHub">
+                    </a>
+                </li>                
+                <li>
+                    <a href="mailto:wissalelamoury@gmail.com">
+                        <img src="{{ url_for('static', filename='icons/email.png') }}" alt="Gmail">
+                    </a>
+                </li>            
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
