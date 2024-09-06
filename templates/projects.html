@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="project-header">
+        <nav>
+            <ul>
+                <li class="project-link"><a href="{{ url_for('projects') }}">Projects</a></li>
+                <div class="center-links">
+                    <li><a href="{{ url_for('home') }}">HOME</a></li>
+                    <li><a href="{{ url_for('exp') }}">Experience</a></li>
+                    <li><a href="{{ url_for('resume') }}">Resume</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Project content section -->
+    <section class="project-content">
+        <div class="project-section">
+            <h2>Project 1: Yelp Data Analysis</h2>
+            <p>This project involved building a responsive and dynamic website using HTML, CSS, and JavaScript.</p>
+            <img src="{{ url_for('static', filename='images/project1.png') }}" alt="Project 1 Image">
+        </div>
+
+        <div class="project-section">
+            <h2>Project 2: Students management system</h2>
+            <p>A Python-based tool for analyzing large datasets, visualizing data with Matplotlib, and automating reports.</p>
+            <img src="{{ url_for('static', filename='images/project2.png') }}" alt="Project 2 Image">
+        </div>
+
+        <!-- Add more project sections as needed -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-triangle">
+            <ul class="social-media">
+                <li><a href="https://www.linkedin.com/in/wissal-el-amoury-138944254/"><img src="{{ url_for('static', filename='icons/Linkedln.png') }}" alt="Linkedln"></a></li>
+                <li><a href="https://github.com/buyakawo"><img src="{{ url_for('static', filename='icons/github.png') }}" alt="GitHub"></a></li>
+                <li><a href="mailto:wissalelamoury@gmail.com"><img src="{{ url_for('static', filename='icons/email.png') }}" alt="Email"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

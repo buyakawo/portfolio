@@ -15,6 +15,7 @@ body {
     justify-content: space-between;
 }
 
+/* Header Styles (applied globally to all pages) */
 header {
     width: 100%;
     background-color: #3d4a1c; /* Dark background for the header */
@@ -37,7 +38,7 @@ header nav ul {
 header nav ul .center-links {
     display: flex;
     justify-content: center;
-    flex: 1; /* Center remaining links */
+    flex: 1; 
 }
 
 header nav ul li {
@@ -289,3 +290,150 @@ footer .social-media li a img {
     color: #3a200d;
 }
 
+
+/* Project page header styles */
+.project-header {
+    width: 100%;
+    background-color: #3d4a1c;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.project-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.project-header nav ul li {
+    margin: 0 10px;
+}
+
+.project-header nav ul .center-links {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.project-header .project-link a {
+    background-color: #fff;
+    color: #3d4a1c;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+
+/* Page content layout */
+.project-content {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    flex-grow: 1; /* Ensures the content fills available space */
+}
+
+.project-section {
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project-section h2 {
+    font-size: 28px;
+    color: #CC5500;
+}
+
+.project-section p {
+    font-size: 23px;
+    color: #3a200d;
+}
+
+.project-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Resume page header styles */
+.resume-header {
+    width: 100%;
+    background-color: #3d4a1c; /* Dark background for the header */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.resume-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.resume-header nav ul li {
+    margin: 0 10px;
+}
+
+
+.resume-link a {
+    background-color: #fff; /* White background */
+    color: #3d4a1c; /* Dark text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* General resume content layout */
+.resume-content {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center;
+    padding: 20px;
+    width: 70%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the content */
+    height: auto; /* Allow height to adjust based on content */
+    z-index: 1;
+    margin-top: 30px;
+}
+
+.intro-section {
+    background-color: #3d4a1c;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners */
+    margin-bottom: 30px; /* Space between intro text and PDF */
+    width: 80%; /* Full width of the container */
+}
+
+.intro-section p {
+    font-size: 20px; /* Increase font size for better readability */
+    font-weight: bold; /* Make text thicker */
+    color: #FF8C00; /* Dark orange color */
+    padding: 20px;
+    max-width: 700px; /* Optional: Control the width of the text block */
+    margin: 0 auto; /* Center the text block */
+}

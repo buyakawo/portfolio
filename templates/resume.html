@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="resume-header">
+        <nav>
+            <ul>
+                <li class="resume-link"><a href="{{ url_for('resume') }}">Resume</a></li>
+                <div class="center-links">
+                    <li><a href="{{ url_for('home') }}">HOME</a></li>
+                    <li><a href="{{ url_for('exp') }}">Experience</a></li>
+                    <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="resume-content">
+        <section class="intro-section">
+            <p>Below is a detailed overview of my professional experience and qualifications. Feel free to explore the document to learn more about my background and skills.</p>
+        </section>
+        <embed src="{{ url_for('static', filename='WISSAL_EL_AMOURY_resume.pdf') }}" type="application/pdf" width="100%" height="800px" />
+    </main>
+
+    <footer>
+        <div class="footer-triangle">
+            <ul class="social-media">
+                <li><a href="https://www.linkedin.com/in/wissal-el-amoury-138944254/" target="_blank"><img src="{{ url_for('static', filename='icons/Linkedln.png') }}" alt="Linkedln"></a></li>
+                <li><a href="https://github.com/buyakawo" target="_blank"><img src="{{ url_for('static', filename='icons/github.png') }}" alt="GitHub"></a></li>
+                <li><a href="mailto:wissalelamoury@gmail.com" target="_blank"><img src="{{ url_for('static', filename='icons/email.png') }}" alt="Email"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
