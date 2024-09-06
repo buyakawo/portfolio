@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experience</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="experience-header">
+        <nav>
+            <ul>
+                <li class="experience-link"><a href="{{ url_for('exp') }}">Experience</a></li>
+                <div class="center-links">
+                    <li><a href="{{ url_for('home') }}" class="home-link">HOME</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Resume</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="experience-content">
+        <div class="experience-intro">
+            <h1>My Professional Experience</h1>
+            <p>Here’s a brief overview of my experiences in software engineering and development.</p>
+        </div>
+
+        <!-- Add your experiences here -->
+        <div class="experience-section">
+            <h2>Intern - Big Data Analyst</h2>
+            <p>Company Name: Suncaper</p>
+            <p>成都(chengdu) china</p>
+            <p>Duration: march 2024 - april 2024</p>
+            <p> - Participated in an internship at Suncaper, focusing on a Big Data Analysis project.</p>
+            <p>    - Collaborated with a team to develop a website for analyzing large datasets, using technologies such as Apache Spark, SQL, MySQL, Flask, Hive, Hadoop, and Python.</p>
+            <p>  - Contributed to the development of a scalable data architecture, ensuring high performance and reliability.</p>
+            <p> - Gained hands-on experience with big data technologies, enhancing my skills in data analysis, web development, and system architecture.</p>
+        </div>
+
+
+        <!-- Add more experience sections as needed -->
+    </section>
+
+    <footer>
+        <div class="footer-triangle">
+            <ul class="social-media">
+                <li><a href="https://www.linkedin.com/in/wissal-el-amoury-138944254/"><img src="{{ url_for('static', filename='icons/Linkedln.png') }}" alt="Linkedln"></a></li>
+                <li><a href="https://github.com/buyakawo"><img src="{{ url_for('static', filename='icons/github.png') }}" alt="GitHub"></a></li>
+                <li><a href="mailto:wissalelamoury@gmail.com"><img src="{{ url_for('static', filename='icons/email.png') }}" alt="Email"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
