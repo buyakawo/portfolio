@@ -1,18 +1,19 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; // client side nevigation, no page reload
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
-  const [toggle, setToggle] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [active, setActive] = useState(""); //tracks which navlink is currently highlited
+  const [toggle, setToggle] = useState(false); //tracks whether the mobile hamburger menu is open
+  const [scrolled, setScrolled] = useState(false); //thracks whether the use have scrolled more than 100px down the page
 
+  {/* Scroll Effect : when scrolled enough, change navbar background from transparent to solid*/}
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
+      const scrollTop = window.scrollY; // current scroll position
       if (scrollTop > 100) {
         setScrolled(true);
       } else {
@@ -20,9 +21,9 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
-
+    window.addEventListener("scroll", handleScroll); // attach listener
     return () => window.removeEventListener("scroll", handleScroll);
+
   }, []);
 
   return (
@@ -30,7 +31,7 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+        scrolled ? "bg-primary" : "bg-transparent" // background of navbar switch based on scrolled
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -38,7 +39,7 @@ const Navbar = () => {
           to='/'
           className='flex items-center gap-2'
           onClick={() => {
-            setActive("");
+            setActive(""); // when we click on logo we clear active link
             window.scrollTo(0, 0);
           }}
         >
@@ -63,6 +64,7 @@ const Navbar = () => {
           ))}
         </ul>
 
+          {/* Mobile Menu */}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
