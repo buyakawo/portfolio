@@ -9,7 +9,6 @@ import {
   reactjs,
   tailwind,
   nodejs,
-  mongodb,
   git,
   figma,
   docker,
@@ -78,10 +77,6 @@ const technologies = [
   {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "PostgreSQL",
-    icon: mongodb,
   },
   {
     name: "git",
