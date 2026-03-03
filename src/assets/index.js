@@ -21,9 +21,9 @@ import typescript from "./tech/typescript.png";
 import suncaper from "./company/suncaper.png";
 import bastion from "./company/bastion.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import callzy from "./projects/callzy.png";
+import Reconciliation from "./projects/Reconciliation.jpg";
+import rrr from "./projects/rrr.png";
 
 export {
   logo,
@@ -46,7 +46,7 @@ export {
   typescript,
   suncaper,
   bastion,
-  carrent,
-  jobit,
-  tripguide,
+  callzy,
+  Reconciliation,
+  rrr,
 };

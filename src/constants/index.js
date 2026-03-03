@@ -14,9 +14,9 @@ import {
   docker,
   suncaper,
   bastion,
-  carrent,
-  jobit,
-  tripguide,
+  Reconciliation,
+  callzy,
+  rrr,
 } from "../assets";
 
 export const navLinks = [
@@ -36,7 +36,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Full stack Web Developer",
+    title: "Full stack Developer",
     icon: web,
   },
   {
@@ -44,7 +44,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Web Developer",
     icon: backend,
   },
 ];
@@ -125,16 +125,16 @@ const experiences = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "CallZY",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "CallZY is a full-stack video meeting web application built with Next.js>, enabling users to instantly start, schedule, and manage secure online meetings through a modern, responsive interface.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "nextjs",
         color: "green-text-gradient",
       },
       {
@@ -142,50 +142,50 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: callzy,
+    source_code_link: "https://github.com/buyakawo/callzy-app",
   },
   {
-    name: "Job IT",
+    name: "Reconciliation Automation System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An automated reconciliation system integrating APIs from different exchanges {hyperliquid, binance, bybit....} to ingest trade and balance data, eliminating manual workflows and improving accuracy.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "OOP",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Emailjs",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: Reconciliation,
+    source_code_link: "https://github.com/buyakawo/",
   },
   {
-    name: "Trip Guide",
+    name: "Royal Remedy Run",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A 2D platformer game built with Python and Pygame where you play as a princess navigating through 4 challenging levels filled with enemies, lava traps, and collectible coins, all in search of the Royal Remedy!",
     tags: [
       {
-        name: "nextjs",
+        name: "PyGame",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Python",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "OOP",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: rrr,
+    source_code_link: "https://github.com/buyakawo/Royal-Remedy-Run?tab=readme-ov-file",
   },
 ];
 
