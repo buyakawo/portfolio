@@ -98,7 +98,7 @@ const experiences = [
     company_name: "suncaper",
     icon: suncaper,
     iconBg: "#383E56",
-    date: "March 2024 - may 2024",
+    date: "Mar 2024 - may 2024",
     points: [
       " Participated in an internship at Suncaper, focusing on a Big Data Analysis project.",
       " Collaborated with a team to develop a website for analyzing large datasets, using technologies such as Apache Spark, SQL, MySQL, Flask, Hive, Hadoop, and Python.",
