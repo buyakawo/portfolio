@@ -1,5 +1,4 @@
 import {
-  mobile,
   backend,
   web,
   javascript,
@@ -17,6 +16,7 @@ import {
   Reconciliation,
   callzy,
   rrr,
+  python
 } from "../assets";
 
 export const navLinks = [
@@ -41,7 +41,7 @@ const services = [
   },
   {
     title: "Python Developer",
-    icon: mobile,
+    icon: python,
   },
   {
     title: "Web Developer",
