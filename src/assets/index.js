@@ -23,6 +23,9 @@ import bastion from "./company/bastion.png";
 import callzy from "./projects/callzy.png";
 import Reconciliation from "./projects/Reconciliation.jpg";
 import rrr from "./projects/rrr.png";
+import xstocks from "./projects/xstocks.png";
+import k8s from "./projects/k8s.png";
+import api from "./projects/api.png";
 
 export {
   logo,
@@ -47,4 +50,7 @@ export {
   Reconciliation,
   rrr,
   python,
+  xstocks,
+  k8s,
+  api,
 };

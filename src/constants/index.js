@@ -16,7 +16,10 @@ import {
   Reconciliation,
   callzy,
   rrr,
-  python
+  python,
+  xstocks,
+  k8s,
+  api,
 } from "../assets";
 
 export const navLinks = [
@@ -167,6 +170,27 @@ const projects = [
     source_code_link: "https://github.com/buyakawo/",
   },
   {
+    name: "XStocks Streamer",
+    description:
+      "a Python pipeline that ingests live market data from multiple exchanges and internal feeds, generating OHLC/trade bars and streaming them to DolphinDB for low-latency analytics.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "dolphinDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "OOP",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: xstocks,
+    source_code_link: "https://github.com/buyakawo",
+  },
+  {
     name: "Royal Remedy Run",
     description:
       "A 2D platformer game built with Python and Pygame where you play as a princess navigating through 4 challenging levels filled with enemies, lava traps, and collectible coins, all in search of the Royal Remedy!",
@@ -186,6 +210,48 @@ const projects = [
     ],
     image: rrr,
     source_code_link: "https://github.com/buyakawo/Royal-Remedy-Run?tab=readme-ov-file",
+  },
+  {
+    name: "TSU: Trading Symbol Updater",
+    description:
+      "Built Trading Symbols Updater, a full-stack web app using Next.js, TypeScript, and Tailwind that lets traders upload and manage daily trading symbols with validation.",
+    tags: [
+      {
+        name: "Nextjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AWS Cognito",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Figma",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: k8s,
+    source_code_link: "https://github.com/buyakawo",
+  },
+  {
+    name: "Python library for internal APIs",
+    description:
+      "a Python library that abstracts and standardizes access to the documented internal APIs.",
+    tags: [
+      {
+        name: "Python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "API",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "OOP",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: api,
+    source_code_link: "https://github.com/buyakawo",
   },
 ];
 
