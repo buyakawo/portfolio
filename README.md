@@ -1,6 +1,8 @@
-# Wissal El Amoury — 3D Developer Portfolio
+# 3D Developer Portfolio
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-blueviolet?style=for-the-badge)](https://buyakawo.github.io/portfolio/)
+
+[![Figma Design](https://img.shields.io/badge/Figma%20Design-Visit%20Site-blueviolet?style=for-the-badge)](https://www.figma.com/design/eiagXzNHrANUOBowBpZQke/Untitled?node-id=0-1&t=yhZkJApY0n1vyqac-1)
 
 A modern, interactive 3D portfolio built with React and Three.js, featuring smooth animations, a real-time 3D computer model, and a fully functional contact form.
 
@@ -38,22 +40,6 @@ A modern, interactive 3D portfolio built with React and Three.js, featuring smoo
 - **[Tailwind CSS](https://tailwindcss.com/)** — Styling
 - **[Vite](https://vitejs.dev/)** — Build tool
 - **[Formspree](https://formspree.io/)** — Contact form backend
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js `v18+`
-- npm or yarn
-
-## 📬 Contact
-
-**Wissal El Amoury**
-📧 wissalelamoury@gmail.com
-
----
 
 ## 📄 License
 
