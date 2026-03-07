@@ -18,8 +18,12 @@ import {
   rrr,
   python,
   xstocks,
-  k8s,
+  k8s1,
   api,
+  sql,
+  k8s,
+  postgres,
+  nextjs,
 } from "../assets";
 
 export const navLinks = [
@@ -70,6 +74,10 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: "nextjs",
+    icon: nextjs,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
@@ -82,6 +90,18 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: "python",
+    icon: python,
+  },
+  {
+    name: "sql",
+    icon: sql,
+  },
+  {
+    name: "postgres",
+    icon: postgres,
+  },
+  {
     name: "git",
     icon: git,
   },
@@ -92,6 +112,10 @@ const technologies = [
   {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "k8s",
+    icon: k8s1,
   },
 ];
 

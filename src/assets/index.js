@@ -16,6 +16,10 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import sql from "./tech/sql.png";
+import k8s1 from "./tech/k8s1.png";
+import postgres from "./tech/postgres.png";
+import nextjs from "./tech/nextjs.png";
 
 import suncaper from "./company/suncaper.png";
 import bastion from "./company/bastion.png";
@@ -53,4 +57,8 @@ export {
   xstocks,
   k8s,
   api,
+  sql,
+  k8s1,
+  postgres,
+  nextjs
 };
