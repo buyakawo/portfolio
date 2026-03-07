@@ -24,6 +24,8 @@ import {
   k8s,
   postgres,
   nextjs,
+  jira,
+  bitbucket,
 } from "../assets";
 
 export const navLinks = [
@@ -102,10 +104,6 @@ const technologies = [
     icon: postgres,
   },
   {
-    name: "git",
-    icon: git,
-  },
-  {
     name: "figma",
     icon: figma,
   },
@@ -116,6 +114,14 @@ const technologies = [
   {
     name: "k8s",
     icon: k8s1,
+  },
+  {
+    name: "bitbucket",
+    icon: bitbucket,
+  },
+  {
+    name: "jira",
+    icon: jira,
   },
 ];
 

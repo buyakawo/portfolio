@@ -20,6 +20,8 @@ import sql from "./tech/sql.png";
 import k8s1 from "./tech/k8s1.png";
 import postgres from "./tech/postgres.png";
 import nextjs from "./tech/nextjs.png";
+import bitbucket from "./tech/bitbucket.png";
+import jira from "./tech/jira.png";
 
 import suncaper from "./company/suncaper.png";
 import bastion from "./company/bastion.png";
@@ -60,5 +62,7 @@ export {
   sql,
   k8s1,
   postgres,
-  nextjs
+  nextjs,
+  bitbucket,
+  jira,
 };
