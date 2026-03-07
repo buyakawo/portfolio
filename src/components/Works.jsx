@@ -16,7 +16,12 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.1 }}
+      >
       <Tilt
         options={{
           max: 45,
@@ -69,20 +74,25 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My works</p>
+      <motion.div
+        variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.1 }}  // ← triggers earlier on mobile
+      >
+        <p className={`${styles.sectionSubText}`}>My works</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.1 }}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          The following projects highlight my technical expertise through practical,
-          real-world implementations. Each entry includes a concise overview along with links to the source code repository and live deployment.
-          Collectively, they demonstrate my ability to architect solutions, apply diverse technologies, address complex challenges, and deliver well-managed,
-          production-ready outcomes.
+          The following projects highlight my technical expertise...
         </motion.p>
       </div>
 
