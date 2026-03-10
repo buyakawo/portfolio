@@ -43,6 +43,8 @@ export const navLinks = [
   },
 ];
 
+export const aboutText = "Software Engineering graduate from Sichuan University (GPA 3.9/4.0) with hands-on experience in full-stack development, trading systems, and data-driven platforms. Former Full-Stack Engineer Intern at Bastion Trading (Hong Kong). Strong background in Python, TypeScript, Next.js, PostgreSQL, and distributed systems, with experience in big data technologies such as Spark and Hadoop. Proven ability to work independently and in cross-functional teams, delivering production-ready systems with clean architecture and strong engineering practices. Let's work together to bring your ideas to life!";
+
 const services = [
   {
     title: "Full stack Engineer",

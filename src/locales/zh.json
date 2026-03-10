@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "about": "关于",
+    "work": "经历",
+    "contact": "联系",
+    "brand": "开发爱好者"
+  },
+  "hero": {
+    "greeting": "你好，我是",
+    "subtitle": "全栈工程师",
+    "subtitle2": "热爱学习与全栈开发"
+  },
+  "about": {
+    "subText": "简介",
+    "heading": "概述。",
+    "description": "四川大学软件工程专业毕业生（GPA 3.9/4.0），具有全栈开发、交易系统和数据驱动平台的实战经验。曾在香港 Bastion Trading 担任全栈工程师实习生。熟练掌握 Python、TypeScript、Next.js、PostgreSQL 及分布式系统，并具备 Spark、Hadoop 等大数据技术经验。能够独立工作，也善于跨职能团队协作，以清晰的架构和良好的工程实践交付生产级系统。让我们携手将您的想法变为现实！",
+    "services": ["全栈工程师", "Python 开发者", "网页开发者"]
+  },
+  "experience": {
+    "subText": "我的经历",
+    "heading": "工作经验。",
+    "jobs": [
+      {
+        "title": "实习生 - 大数据分析师",
+        "company_name": "Suncaper",
+        "date": "2024年3月 - 2024年5月",
+        "points": [
+          "在 Suncaper 参与大数据分析项目实习。",
+          "与团队合作开发用于分析大规模数据集的网站，使用了 Apache Spark、SQL、MySQL、Flask、Hive、Hadoop 和 Python 等技术。",
+          "参与构建可扩展的数据架构，确保系统高性能与高可靠性。",
+          "积累了大数据技术的实战经验，提升了数据分析、网页开发和系统架构方面的能力。"
+        ]
+      },
+      {
+        "title": "全栈工程师实习生",
+        "company_name": "Bastion Trading",
+        "date": "2025年9月 - 2026年1月",
+        "points": [
+          "与香港的交易和工程团队合作，设计并交付支持多交易所交易运营的内部工具。",
+          "使用 Python 和 PostgreSQL 开发跨多个交易所的交易与余额对账系统，确保数据一致性。",
+          "构建交易所行情流数据管道，通过 WebSocket 和 REST API 接入实时市场数据，将聚合后的 K 线数据流式传输至 DolphinDB。",
+          "使用 Next.js 设计并实现全栈内部 Web 应用，使交易员能够动态管理交易标的和配置。",
+          "将应用集成至 Kubernetes 集群，支持配置更新而无需中断服务。"
+        ]
+      }
+    ]
+  },
+  "works": {
+    "subText": "我的作品",
+    "heading": "项目。",
+    "description": "以下项目通过实际应用展示了我的技术能力。每个项目都附有简要说明及源代码链接，体现了我在架构设计、多技术栈应用、复杂问题解决和高质量交付方面的综合能力。",
+    "projects": [
+      {
+        "name": "CallZY",
+        "description": "CallZY 是一款基于 Next.js 的全栈视频会议应用，用户可即时发起、安排和管理安全的在线会议，界面现代且响应式。"
+      },
+      {
+        "name": "对账自动化系统",
+        "description": "自动对账系统，集成多个交易所（Hyperliquid、Binance、Bybit等）API，获取交易和余额数据，消除手动流程并提高准确性。"
+      },
+      {
+        "name": "XStocks 行情流",
+        "description": "一个 Python 数据管道，从多个交易所接入实时行情数据，生成 OHLC K 线并流式传输至 DolphinDB，用于低延迟分析。"
+      },
+      {
+        "name": "皇家药方跑酷",
+        "description": "使用 Python 和 Pygame 构建的 2D 平台跑酷游戏，玩家扮演公主，穿越4个充满敌人、熔岩陷阱和金币的关卡，寻找皇家药方！"
+      },
+      {
+        "name": "TSU：交易标的更新器",
+        "description": "使用 Next.js、TypeScript 和 Tailwind 构建的全栈 Web 应用，允许交易员上传和管理每日交易标的并进行数据校验。"
+      },
+      {
+        "name": "内部 API Python 库",
+        "description": "一个 Python 库，用于抽象和标准化对内部文档 API 的访问。"
+      }
+    ]
+  },
+  "contact": {
+    "subText": "联系我",
+    "heading": "联系。",
+    "nameLabel": "您的姓名",
+    "namePlaceholder": "请输入您的姓名",
+    "emailLabel": "您的邮箱",
+    "emailPlaceholder": "请输入您的邮箱地址",
+    "messageLabel": "您的留言",
+    "messagePlaceholder": "请输入您想说的话",
+    "send": "发送",
+    "sending": "发送中...",
+    "successMsg": "谢谢！我会尽快回复您。",
+    "errorMsg": "出现错误，请重试。",
+    "errorName": "姓名为必填项。",
+    "errorEmail": "邮箱为必填项。",
+    "errorEmailInvalid": "请输入有效的邮箱地址。",
+    "errorMessage": "留言为必填项。",
+    "errorMessageShort": "留言至少需要10个字符。"
+  }
+}

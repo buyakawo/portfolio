@@ -6,6 +6,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { useLanguage } from "../context/LanguageContext";
 
 const ProjectCard = ({
   index,
@@ -72,16 +73,28 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const { t, isZh } = useLanguage();
+  const zhProjects = isZh ? t("works.projects") : null;
+
+  const displayProjects = projects.map((proj, i) => ({
+    ...proj,
+    ...(isZh && zhProjects?.[i] ? zhProjects[i] : {}),
+  }));
+
   return (
     <>
       <motion.div
         variants={textVariant()}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.1 }}  // ← triggers earlier on mobile
+        viewport={{ once: true, amount: 0.1 }}
       >
-        <p className={`${styles.sectionSubText}`}>My works</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText}`}>
+          {isZh ? t("works.subText") : "My works"}
+        </p>
+        <h2 className={`${styles.sectionHeadText}`}>
+          {isZh ? t("works.heading") : "Projects."}
+        </h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -92,12 +105,14 @@ const Works = () => {
           viewport={{ once: true, amount: 0.1 }}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          The following projects highlight my technical expertise...
+          {isZh
+            ? t("works.description")
+            : "The following projects highlight my technical expertise through practical, real-world implementations. Each entry includes a concise overview along with links to the source code repository and live deployment. Collectively, they demonstrate my ability to architect solutions, apply diverse technologies, address complex challenges, and deliver well-managed, production-ready outcomes."}
         </motion.p>
       </div>
 
       <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
+        {displayProjects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>

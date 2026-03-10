@@ -1,37 +1,36 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom"; // client side nevigation, no page reload
+import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { useLanguage } from "../context/LanguageContext";
 
 const Navbar = () => {
-  const [active, setActive] = useState(""); //tracks which navlink is currently highlited
-  const [toggle, setToggle] = useState(false); //tracks whether the mobile hamburger menu is open
-  const [scrolled, setScrolled] = useState(false); //thracks whether the use have scrolled more than 100px down the page
+  const [active, setActive] = useState("");
+  const [toggle, setToggle] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const { language, toggleLanguage, t, isZh } = useLanguage();
 
-  {/* Scroll Effect : when scrolled enough, change navbar background from transparent to solid*/}
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.scrollY; // current scroll position
-      if (scrollTop > 100) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 100);
     };
-
-    window.addEventListener("scroll", handleScroll); // attach listener
+    window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-
   }, []);
+
+  // Translate nav link title based on language
+  const getNavTitle = (id) => {
+    if (isZh) return t(`nav.${id}`);
+    const titles = { about: "About", work: "Work", contact: "Contact" };
+    return titles[id];
+  };
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent" // background of navbar switch based on scrolled
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${
+        scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -39,33 +38,53 @@ const Navbar = () => {
           to='/'
           className='flex items-center gap-2'
           onClick={() => {
-            setActive(""); // when we click on logo we clear active link
+            setActive("");
             window.scrollTo(0, 0);
           }}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          <p className='text-white text-[18px] font-bold cursor-pointer flex'>
             wissamore &nbsp;
-            <span className='sm:block hidden'> | Dev Enthusiast</span>
+            <span className='sm:block hidden'>
+              | {isZh ? t("nav.brand") : "Dev Enthusiast"}
+            </span>
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        {/* Desktop Nav */}
+        <ul className='list-none hidden sm:flex flex-row gap-10 items-center'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
+                active === nav.id ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => setActive(nav.id)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`#${nav.id}`}>{getNavTitle(nav.id)}</a>
             </li>
           ))}
+
+          {/* Language Toggle */}
+          <li>
+            <button
+              onClick={toggleLanguage}
+              className='flex items-center gap-1 bg-tertiary px-3 py-1 rounded-full text-white text-[14px] font-medium hover:opacity-80 transition-opacity'
+            >
+              {language === "en" ? "🇨🇳 中文" : "🇬🇧 EN"}
+            </button>
+          </li>
         </ul>
 
-          {/* Mobile Menu */}
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        {/* Mobile Menu */}
+        <div className='sm:hidden flex flex-1 justify-end items-center gap-3'>
+          <button
+            onClick={toggleLanguage}
+            className='bg-tertiary px-2 py-1 rounded-full text-white text-[12px] font-medium'
+          >
+            {language === "en" ? "中文" : "EN"}
+          </button>
+
           <img
             src={toggle ? close : menu}
             alt='menu'
@@ -83,14 +102,14 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
+                    active === nav.id ? "text-white" : "text-secondary"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(nav.title);
+                    setActive(nav.id);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`#${nav.id}`}>{getNavTitle(nav.id)}</a>
                 </li>
               ))}
             </ul>
