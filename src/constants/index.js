@@ -13,6 +13,7 @@ import {
   docker,
   suncaper,
   bastion,
+  gensquare,
   Reconciliation,
   callzy,
   rrr,
@@ -22,10 +23,11 @@ import {
   api,
   sql,
   k8s,
-  postgres,
   nextjs,
   jira,
   bitbucket,
+  reactFlow,
+  convex
 } from "../assets";
 
 export const navLinks = [
@@ -43,11 +45,11 @@ export const navLinks = [
   },
 ];
 
-export const aboutText = "Software Engineering graduate from Sichuan University (GPA 3.9/4.0) with hands-on experience in full-stack development, trading systems, and data-driven platforms. Former Full-Stack Engineer Intern at Bastion Trading (Hong Kong). Strong background in Python, TypeScript, Next.js, PostgreSQL, and distributed systems, with experience in big data technologies such as Spark and Hadoop. Proven ability to work independently and in cross-functional teams, delivering production-ready systems with clean architecture and strong engineering practices. Let's work together to bring your ideas to life!";
+export const aboutText = "Software Engineering undergraduate from Sichuan University (GPA 3.9/4.0) with experience in full-stack development and AI platforms. Currently Junior Software Engineer at GenSquare, building a node-based AI workflow platform; integrating AI models, advanced React Flow features, and multi-member workspaces. Previously Full-Stack Engineer Intern at Bastion Trading (Hong Kong), developing multi-exchange trading tools and real-time data pipelines. Strong in TypeScript, Next.js, React Flow, Python. Fluent in English, French, Arabic, and intermediate Mandarin (HSK 4).. Let's work together to bring your ideas to life!";
 
 const services = [
   {
-    title: "Full stack Engineer",
+    title: "Software Engineer",
     icon: web,
   },
   {
@@ -55,19 +57,23 @@ const services = [
     icon: python,
   },
   {
-    title: "Web Developer",
+    title: "Full stack Engineer",
     icon: backend,
   },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
+    {
+    name: "nextjs",
+    icon: nextjs,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "React JS",
+    icon: reactjs,
+  },
+    {
+    name: "Node JS",
+    icon: nodejs,
   },
   {
     name: "JavaScript",
@@ -78,21 +84,18 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "nextjs",
-    icon: nextjs,
+    name: "HTML 5",
+    icon: html,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "CSS 3",
+    icon: css,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
+
   {
     name: "python",
     icon: python,
@@ -101,9 +104,13 @@ const technologies = [
     name: "sql",
     icon: sql,
   },
+    {
+    name: "reactFlow",
+    icon: reactFlow,
+  },
   {
-    name: "postgres",
-    icon: postgres,
+    name: "convex",
+    icon: convex,
   },
   {
     name: "figma",
@@ -124,6 +131,10 @@ const technologies = [
   {
     name: "jira",
     icon: jira,
+  },
+    {
+    name: "git",
+    icon: git,
   },
 ];
 
@@ -153,6 +164,20 @@ const experiences = [
       "Built an exchange trade-bar streaming pipeline that ingested real-time market data via Websocket and Rest APIs and streamed aggregated bars into DolphinDB for quantitative analysis and strategy evaluation.",
       "Designed and implemented a full stack internal web app using nextjs, enabling traders to dynamically manage trading symbols and configurations.",
       "Integrated the application with Kubernetes cluster, supporting configuration updates without service downtime. ",
+    ],
+  },
+    {
+    title: "Junior Software Engineer",
+    company_name: "Gensquare AI",
+    icon: gensquare,
+    iconBg: "#E6DEDD",
+    date: "May 2026 - present",
+    points: [
+      "Integrated multiple AI models into the node-based workflow platform and built several supporting features including audio nodes, edge menus, right-click context menus, multi-selection pill menus, and node grouping using React Flow. ",
+      "Done the transition from single-user accounts to a multi-member workspace system with member management, roles, and shared access.",
+      "Designed and implemented the full landing page, pricing page, and legal pages, forming the core of the platform’s marketing site.",
+      "Owned the complete template system: admin-side template creation and management, user-side discovery, preview, usage, and request flows.",
+      "Contributed across the full stack, debugging and shipping features spanning frontend, backend, and infrastructure. ",
     ],
   },
 ];

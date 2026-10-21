@@ -22,9 +22,12 @@ import postgres from "./tech/postgres.png";
 import nextjs from "./tech/nextjs.png";
 import bitbucket from "./tech/bitbucket.png";
 import jira from "./tech/jira.png";
+import reactFlow from "./tech/reactFlow.png";
+import convex from "./tech/convex.png";
 
 import suncaper from "./company/suncaper.png";
 import bastion from "./company/bastion.png";
+import gensquare from "./company/gensquare.png";
 
 import callzy from "./projects/callzy.png";
 import Reconciliation from "./projects/Reconciliation.jpg";
@@ -52,6 +55,7 @@ export {
   typescript,
   suncaper,
   bastion,
+  gensquare,
   callzy,
   Reconciliation,
   rrr,
@@ -65,4 +69,6 @@ export {
   nextjs,
   bitbucket,
   jira,
+  reactFlow,
+  convex,
 };
